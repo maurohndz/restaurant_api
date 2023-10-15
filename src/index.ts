@@ -1,7 +1,7 @@
-import express from 'express';
+import './config/loadEnv';
+import config from './config';
+import Server from './server/server';
 
-const app = express();
+const server = new Server(config.api.port, config.api.version);
 
-app.listen(3000, () => {
-  console.log('Serer On');
-});
+void server.listen();

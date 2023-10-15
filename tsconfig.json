@@ -15,6 +15,6 @@
     "typeRoots": ["./node_modules/@types"],
     "strictNullChecks": true
   },
-  "include": ["src/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
