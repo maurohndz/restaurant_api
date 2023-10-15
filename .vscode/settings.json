@@ -1,0 +1,5 @@
+{
+  "editor.tabSize": 2, // Tamaño de tabulación
+  "editor.insertSpaces": true, // Utilizar espacios en lugar de tabulaciones
+  "prettier.eslintIntegration": true // Integración de Prettier y ESLint
+}
