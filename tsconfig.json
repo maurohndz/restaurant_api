@@ -10,7 +10,9 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      //"@route": ["./src/**"]
+      "@Restaurants/*": ["./src/Restaurants/*"],
+      "@Middlewares/*": ["./src/middlewares/*"],
+      "@Interfaces/*": ["./src/common/interfaces/*"],
     },
     "typeRoots": ["./node_modules/@types"],
     "strictNullChecks": true
