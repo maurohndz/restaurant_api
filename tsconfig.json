@@ -13,6 +13,7 @@
       "@Restaurants/*": ["./src/Restaurants/*"],
       "@Middlewares/*": ["./src/middlewares/*"],
       "@Interfaces/*": ["./src/common/interfaces/*"],
+      "@Constants/*": ["./src/common/constants/*"],
     },
     "typeRoots": ["./node_modules/@types"],
     "strictNullChecks": true

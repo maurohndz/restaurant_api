@@ -9,7 +9,7 @@ const router = Router();
 router.get(
   '/',
   commonController(async () => {
-    return { data: {} };
+    return { data: ['Restaurant'] };
   })
 );
 

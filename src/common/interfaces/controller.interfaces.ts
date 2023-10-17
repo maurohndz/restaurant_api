@@ -2,7 +2,7 @@ import { type Request, type Response, type NextFunction } from 'express';
 
 export interface ControllerResponse {
   data: unknown;
-  status?: number;
+  type?: string;
 }
 
 export type Controller = (
