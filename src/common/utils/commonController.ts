@@ -4,7 +4,7 @@ import {
   type ControllerResponse
 } from '@Interfaces/controller.interfaces';
 // Response
-import { buildResponse } from '../utils/buildResponse';
+import { buildResponse } from './buildResponse';
 // Constants
 import { SUCCESS, FATAL } from '@Constants/responseMessages';
 

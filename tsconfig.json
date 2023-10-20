@@ -11,9 +11,12 @@
     "baseUrl": ".",
     "paths": {
       "@Restaurants/*": ["./src/Restaurants/*"],
-      "@Middlewares/*": ["./src/middlewares/*"],
+      "@Middlewares/*": ["src/common/middlewares/*"],
+      "@Controllers/*": ["./src/controllers/*"],
+      "@Services/*": ["./src/services/*"],
       "@Interfaces/*": ["./src/common/interfaces/*"],
       "@Constants/*": ["./src/common/constants/*"],
+      "@Utils/*": ["./src/common/utils/*"],
     },
     "typeRoots": ["./node_modules/@types"],
     "strictNullChecks": true

@@ -1,16 +1,14 @@
-import { Router } from 'express';
+import { type Router } from 'express';
 // Common
-import { commonController } from 'src/common/infrastructure/commonController';
+import { commonController } from 'src/common/utils/commonController';
 
-// init Router
-const router = Router();
-// Init Service
+function listRestaurants(router: Router): void {
+  router.get(
+    '/',
+    commonController(async () => {
+      return { data: ['Restaurant'] };
+    })
+  );
+}
 
-router.get(
-  '/',
-  commonController(async () => {
-    return { data: ['Restaurant'] };
-  })
-);
-
-export default router;
+export default listRestaurants;

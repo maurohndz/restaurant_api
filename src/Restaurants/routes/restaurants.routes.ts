@@ -7,9 +7,9 @@ function restaurantsRoutes(router: Router): void {
   const restaurants = Router();
 
   // [GET] List all restaurants
-  restaurants.use(ListRestaurants);
+  ListRestaurants(restaurants);
   // [POST] Register/Create restaurant
-  restaurants.use(CreateRestaurant);
+  CreateRestaurant(restaurants);
 
   router.use('/restaurants', restaurants);
 }

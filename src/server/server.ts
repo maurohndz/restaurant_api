@@ -3,7 +3,6 @@ import bodyParser from 'body-parser';
 import express, { Router } from 'express';
 //
 import { registerRoutes } from './registerRoutes';
-import { handleResponse } from './handleResponse';
 
 class Server {
   private readonly port: string;
@@ -27,8 +26,6 @@ class Server {
     this.express.use('/api/v1/', router);
     // Register routes
     registerRoutes(router);
-    // Handle all response
-    this.express.use(handleResponse);
   }
 
   // Listen Server
