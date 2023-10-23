@@ -1,14 +1,7 @@
-import { Router } from 'express';
+import { type NextFunction, type Request, type Response } from 'express';
 
-function commonValidator(validations = []): Router {
-  const router = Router();
-
-  return router.use('*', validations, (req, res, next) => {
-    if (false) {
-    } else {
-      next();
-    }
-  });
+function commonValidator(validations = [], params: unknown): unknown {
+  return [validations, (req: Request, res: Response, next: NextFunction) => {}];
 }
 
 export { commonValidator };
